@@ -1,0 +1,109 @@
+apiVersion: v1
+entries:
+  gitea:
+  - apiVersion: v2
+    appVersion: 1.22.3
+    created: "2024-10-18T15:28:15.679954896Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.5.20
+    - condition: postgresql-ha.enabled
+      name: postgresql-ha
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.2.16
+    - condition: redis-cluster.enabled
+      name: redis-cluster
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 10.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.6.4
+    description: Gitea Helm chart for Kubernetes
+    digest: 8cf4f5450c16ae789151dd6e8d30fc14015bbd379aee052c1b64e223a5fdc330
+    icon: https://gitea.com/assets/img/logo.svg
+    keywords:
+    - git
+    - issue tracker
+    - code review
+    - wiki
+    - gitea
+    - gogs
+    maintainers:
+    - email: charlie@charliedrage.com
+      name: Charlie Drage
+    - email: maintainers@gitea.io
+      name: Gitea Authors
+    - email: konrad.lother@novum-rgi.de
+      name: Konrad Lother
+    - email: lucas.hahn@novum-rgi.de
+      name: Lucas Hahn
+    - email: sk.bunsenbrenner@gmail.com
+      name: Steven Kriegler
+    - email: patrick.schratz@gmail.com
+      name: Patrick Schratz
+    name: gitea
+    sources:
+    - https://gitea.com/gitea/helm-chart
+    - https://github.com/go-gitea/gitea
+    - https://hub.docker.com/r/gitea/gitea/
+    type: application
+    urls:
+    - https://dl.gitea.com/charts/gitea-10.5.0.tgz
+    version: 10.5.0
+  - apiVersion: v2
+    appVersion: 1.22.2
+    created: "2024-09-11T13:17:18.225426162Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.5.20
+    - condition: postgresql-ha.enabled
+      name: postgresql-ha
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.2.16
+    - condition: redis-cluster.enabled
+      name: redis-cluster
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 10.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.6.4
+    description: Gitea Helm chart for Kubernetes
+    digest: b2ac71b48f3713ac49bcb927ca463d4d43b0519da9c14a442fd217e2e526da63
+    icon: https://gitea.com/assets/img/logo.svg
+    keywords:
+    - git
+    - issue tracker
+    - code review
+    - wiki
+    - gitea
+    - gogs
+    maintainers:
+    - email: charlie@charliedrage.com
+      name: Charlie Drage
+    - email: maintainers@gitea.io
+      name: Gitea Authors
+    - email: konrad.lother@novum-rgi.de
+      name: Konrad Lother
+    - email: lucas.hahn@novum-rgi.de
+      name: Lucas Hahn
+    - email: sk.bunsenbrenner@gmail.com
+      name: Steven Kriegler
+    - email: patrick.schratz@gmail.com
+      name: Patrick Schratz
+    name: gitea
+    sources:
+    - https://gitea.com/gitea/helm-chart
+    - https://github.com/go-gitea/gitea
+    - https://hub.docker.com/r/gitea/gitea/
+    type: application
+    urls:
+    - https://dl.gitea.com/charts/gitea-10.4.1.tgz
+    version: 10.4.1
+ 
+generated: "2024-10-18T15:28:15.653872594Z"
