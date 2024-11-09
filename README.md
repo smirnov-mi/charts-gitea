@@ -14,6 +14,8 @@ acme
 
 ## Values
 
+see: https://gitea.com/gitea/helm-chart#database-defaults
+
 
 ## Install
 
