@@ -2,6 +2,13 @@
 
 ## Pre-req.
 
+### required
+K8s
+Storage-class
+
+### optional
+Database
+acme
 
 ## Values
 
