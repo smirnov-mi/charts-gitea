@@ -17,6 +17,15 @@ acme
 
 ## Install
 
+connect this repo:
+```bash
+helm repo add https://smirnov-mi.github.io/charts-gitea/
+```
+
+verify that you see your package:
+```bash
+helm search repo gitea
+```
 
 
 ## See also
