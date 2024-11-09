@@ -19,7 +19,7 @@ acme
 
 connect this repo:
 ```bash
-helm repo add https://smirnov-mi.github.io/charts-gitea/
+helm repo add https://smirnov-mi.github.io/charts-gitea/    [--insecure-skip-tls-verify]
 ```
 
 verify that you see your package:
