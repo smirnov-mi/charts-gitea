@@ -14,9 +14,20 @@ acme
 
 ## Values
 
+see: https://gitea.com/gitea/helm-chart#database-defaults
+
 
 ## Install
 
+connect this repo:
+```bash
+helm repo add https://smirnov-mi.github.io/charts-gitea/    [--insecure-skip-tls-verify]
+```
+
+verify that you see your package:
+```bash
+helm search repo gitea
+```
 
 
 ## See also
