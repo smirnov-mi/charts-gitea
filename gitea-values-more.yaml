@@ -37,6 +37,13 @@ service:
     port: 22
     clusterIP:
 
+#persistence
+#storageClass or claimName required if set to true
+#persistence:
+#  enabled: true
+#  storageClass: myOwnStorageClass
+# or
+#  claimName: MyAwesomeGiteaClaim
 persistence:
   enabled: false
 
@@ -50,3 +57,14 @@ gitea:
       ADAPTER: memory
     queue:
       TYPE: level
+
+#limits
+
+resources:
+  gitea:
+    requests:
+      memory: 100Mi
+      cpu: 200m
+    limits:
+      memory: 1Gi
+      cpu: 1
