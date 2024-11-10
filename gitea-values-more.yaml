@@ -1,0 +1,43 @@
+# HELM values for Gitea HELM chart by Bitnami
+
+# based on https://gitea.com/gitea/helm-chart
+
+## more than minimal DEV installation
+
+## namespace added in HELM command, e.g.:
+# helm install gitea1 charts-gitea/gitea -f gitea-values-minimal.yaml --namespace test1 --create-namespace
+
+## DNS-name
+
+redis-cluster:
+  enabled: false
+redis:
+  enabled: false
+postgresql:
+  enabled: false
+postgresql-ha:
+  enabled: false
+
+service:
+  http:
+    type: ClusterIP
+    port: 3000
+    clusterIP:
+  ssh:
+    type: ClusterIP
+    port: 22
+    clusterIP:
+
+persistence:
+  enabled: false
+
+gitea:
+  config:
+    database:
+      DB_TYPE: sqlite3
+    session:
+      PROVIDER: memory
+    cache:
+      ADAPTER: memory
+    queue:
+      TYPE: level
