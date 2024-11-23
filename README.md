@@ -7,6 +7,8 @@ K8s
 Helm
 Storage-class
 
+**Warning:** Won't work for OKD / OpenShift as is.
+
 
 ### optional
 Database
